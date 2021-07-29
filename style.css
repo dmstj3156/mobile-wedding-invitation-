@@ -107,9 +107,10 @@ section .container h2{
   width: 100%;
 }
 #call{
+    width: 100%; 
+}
+#call .banner img{
     width: 100%;
-    
-   
 }
 #call .phone{
 text-align: center;
