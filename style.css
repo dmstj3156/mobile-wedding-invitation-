@@ -1,0 +1,184 @@
+/*style.css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+   font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif; 
+    color: #606060;
+    background-color: #F3F5F1;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+section .container h2{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 5px;
+    text-align: right;
+}
+.container{
+    
+    border-top: 1px solid #e4e2e2;
+    
+}
+.container2, .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    ;
+}
+.line1{
+    width: 30%;
+    border-top: 1px solid #c4c4c4;
+    margin-top: 24px;
+    
+    margin-left: 35%;
+}
+#title .container{
+   padding-bottom: 40px;
+}
+#title img{
+    width: 100%;
+    object-fit: cover;/*가로세로 비율을 유지하면서 크기를 늘리기*/
+    height: 50vh;
+    padding-top: 25px;
+    display: block;
+}
+#title .introText{
+    width: 100%;
+    height: 43vh;
+    background-color: ;
+    display: flex;
+    text-align: right;
+    /*수평우측*/
+    justify-content: flex-end;
+    /*수직우측*/
+    align-items: flex-end;
+}
+#title .introText h2{
+    
+    color: #444;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+#title .introText p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+#invitation{
+    text-align: right;
+}
+#invitation h2{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif; 
+    padding-top: 44px;
+    padding-bottom: 70px;
+    letter-spacing: 5px;
+}
+#invitation p{
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+#invitation ul{
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+#invitation ul li{
+    padding-bottom: 5px;
+}
+#invitation ul li span{
+    font-size: 12px;
+}
+#invitation img{
+  width: 100%;
+}
+#call{
+    width: 100%;
+    
+   
+}
+#call .phone{
+text-align: center;
+height: 160px;
+}
+#call .phone li{
+  display: inline-block;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #606060;
+  font-size: 14px;
+  padding-right: 20px;
+}
+#call .phone li:last-child{
+    padding-right: 0;
+}
+#call .phone p{
+   padding-top: 10px;
+}
+#gallery .container figure > img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+#gallery .container .galleryList{
+   display:flex;
+   flex-wrap: wrap;
+   padding-bottom: 30px;
+}
+#gallery .container .galleryList li{
+    width: 33.33%;
+    padding-right: 10px;
+    height: 116px;
+}
+#gallery .container .galleryList li:nth-child(3n){
+    padding-right: 0;
+    
+}
+#gallery .container .galleryList li img{
+    width: 100%;
+    height: 106px;
+    object-fit: cover;
+}
+/* 비디오 컨테이너 : 16 : 9 비율로 제작*/
+.video{
+    position: relative;
+    padding-bottom: 56.25%;/* 백분율로 환산한 높이*/
+    margin-bottom: 60px
+}
+
+#video iframe{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+#video p{
+   margin-bottom: 60px;
+   text-align: center;
+   font-size: 15px;
+}
+.map{
+    position: relative;
+    padding-bottom: 56.25%;/* 백분율로 환산한 높이*/
+    margin-bottom: 60px
+}
+
+#location iframe{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
