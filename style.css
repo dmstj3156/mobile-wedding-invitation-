@@ -131,9 +131,16 @@ height: 160px;
 #call .phone p{
    padding-top: 10px;
 }
+#gallery .container figure{
+    width: 100%;
+    height: 210px;
+}
 #gallery .container figure > img{
     width: 100%;
     padding-bottom: 30px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 #gallery .container .galleryList{
    display:flex;
@@ -179,12 +186,13 @@ height: 160px;
 #location .icon {
   margin-left: 30px;
   margin-right: 30px;
+ 
 }
 #location .icon .appLink{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #e4e2e2;
 }
 #location .icon ul li:not(:last-child){

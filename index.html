@@ -9,6 +9,9 @@
     <!--폰트-->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <!--jquery-->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
     <section id="title">
@@ -72,12 +75,12 @@
                 <img src="./images/gallery main.jpg" alt="">
             </figure>
             <ul class="galleryList">
-                <li><a href=""><img src="./images/gallery1.jpg" alt=""></a></li>
-                <li><a href=""><img src="./images/gallery2.jpg" alt=""></a></li>
-                <li><a href=""><img src="./images/gallery3.jpg" alt=""></a></li>
-                <li><a href=""><img src="./images/gallery4.jpg" alt=""></a></li>
-                <li><a href=""><img src="./images/gallery5.jpg" alt=""></a></li>
-                <li><a href=""><img src="./images/wedding title.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/gallery1.jpg" alt="1"></a></li>
+                <li><a href="#"><img src="./images/gallery2.jpg" alt="2"></a></li>
+                <li><a href="#"><img src="./images/gallery3.jpg" alt="3"></a></li>
+                <li><a href="#"><img src="./images/gallery4.jpg" alt="4"></a></li>
+                <li><a href="#"><img src="./images/gallery5.jpg" alt="5"></a></li>
+                <li><a href="#"><img src="./images/wedding title.jpg" alt="6"></a></li>
             </ul>
         </div>
         </section>
@@ -100,10 +103,12 @@
            
            <div class="icon">
                <ul class="appLink">
-                   <li><a href=""><img src="./images/티맵.png" alt=""><p>티맵</p></a></li>
-                   <li><a href=""><img src="./images/카카오내비.png" alt=""><p>카카오 내비</p></a></li>
-                   <li><a href=""><img src="./images/카카오맵.png" alt=""><p>카카오 맵</p></a></li>
-                   <li><a href=""><img src="./images/네이버 지도.png" alt=""><p>네이버 지도</p></a></li>
+                   <li>   <a 
+                    target="_blank"
+                    href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx20401a447f994002b83f0e74e5482a2d&name=김포웨딩부페&lon=127.00517884800654&lat=37.555954592538384"><img src="./images/티맵.png" alt=""><p>티맵</p></a></li>
+                   <li><a href="#" onclick="kakao_navi();"><img src="./images/카카오내비.png" alt=""><p>카카오 내비</p></a></li>
+                   <li><a href="http://kko.to/wI26dLjfT" target="_blank"><img src="./images/카카오맵.png" alt=""><p>카카오 맵</p></a></li>
+                   <li><a href="https://map.naver.com/v5/directions/-/-/-/transit?c=14141453.2899228,4512164.5656315,15,0,0,0,dh" target="_blank"><img src="./images/네이버 지도.png" alt=""><p>네이버 지도</p></a></li>
                </ul>
            </div>
            <div class="container2">
@@ -124,5 +129,27 @@
             <p>서울특별시 강남</p>
             <p class="strong">강남웨딩홀</p>
         </footer>
+
+           <!-- 카카오 api 설치 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+      var is_pc = '1'
+      var app_key = '13da3914377346b0b8f74f5309b49dad'
+
+      Kakao.init(app_key);
+
+      //카카오네비 실행
+      function kakao_navi() {
+        if (is_pc == '1') {
+          alert('모바일 기기 전용 기능입니다')
+        }
+        Kakao.Navi.start({
+          name: '강남웨딩홀릭', //목적지
+          x: 127.00517884800654,
+          y: 37.555954592538384,
+          coordType: 'wgs84'
+        });
+      }
+    </script>
 </body>
 </html>
