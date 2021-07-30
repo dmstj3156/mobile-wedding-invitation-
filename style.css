@@ -25,10 +25,11 @@ section .container h2{
     padding-bottom: 50px;
     letter-spacing: 5px;
     text-align: right;
+    border-top: 1px solid #e4e2e2;
 }
 .container{
     
-    border-top: 1px solid #e4e2e2;
+   
     
 }
 .container2, .container{
@@ -107,7 +108,7 @@ section .container h2{
   width: 100%;
 }
 #call{
-    width: 100%; 
+    width: 100%;  
 }
 #call .banner img{
     width: 100%;
@@ -172,14 +173,67 @@ height: 160px;
    font-size: 15px;
 }
 .map{
-    position: relative;
-    padding-bottom: 56.25%;/* 백분율로 환산한 높이*/
-    margin-bottom: 60px
+    padding-bottom: 30px;
 }
 
-#location iframe{
-    width: 100%;
-    position: absolute;
-    left: 0;
-    height: 100%;
+#location .icon {
+  margin-left: 30px;
+  margin-right: 30px;
 }
+#location .icon .appLink{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e4e2e2;
+}
+#location .icon ul li:not(:last-child){
+    
+    padding-right: 30px;
+}
+
+#location .icon ul li a p {
+   
+    font-size: 10px;
+}
+.transfer{
+    padding-top: 40px;
+    
+    text-align: right;
+}
+.transfer dt{
+    font-weight: bold;
+    font-size: 18px;
+}
+.transfer dd{
+    padding-bottom: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 24px;
+}
+footer{
+    width: 100%;
+    
+    background-color: #295002;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+footer a.num{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+   
+}  
+footer p, p.strong{
+    font-size: 14px;
+}
+ 
+footer p.strong{
+    font-weight: bold;
+    padding-top: 5px;
+}  
+footer p{
+    padding-top: 10px;
+} 
